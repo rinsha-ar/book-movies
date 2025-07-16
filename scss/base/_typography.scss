@@ -1,0 +1,46 @@
+
+
+
+// 2. Base Font Setup
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  font-family: $font-family-base;
+  font-weight: $font-weight-regular;
+  line-height: $line-height-base;
+  color: $color-body;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+// 3. Paragraphs
+p {
+  font-size: 1rem;
+  line-height: $line-height-base;
+  margin-bottom: 1rem;
+}
+
+// 4. Headings
+h1, h2,h3 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-heading;
+  color: $color-heading;
+  margin: 0 0 0.5rem 0;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.45rem; }
+
+@include respond(small) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.45rem; }
+  p  { font-size: 0.95rem; }
+}

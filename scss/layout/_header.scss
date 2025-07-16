@@ -1,0 +1,26 @@
+
+.movie-grid__header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+
+  .movie-grid__title {
+    margin-bottom: 0.5rem;
+    margin-top: 0.6rem;
+  }
+
+  .movie-grid__subtitle {
+    max-width: rem(700px);
+    margin: 0 auto;
+  }
+
+  @include respond(small) {
+    margin-bottom: 1.5rem;
+
+    
+
+    .movie-grid__subtitle {
+      padding: 0 0.5rem;
+    }
+  }
+}
