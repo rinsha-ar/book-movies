@@ -3,6 +3,7 @@
    @media (max-width: 600px) { @content; }
  }
 }
+
 @mixin center-flex {
  display: flex;
  justify-content: center;
