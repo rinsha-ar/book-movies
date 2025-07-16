@@ -4,68 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recommended Movies</title>
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="scss/main.css" />
 </head>
 <body>
 
-  <main class="card-grid-section">
-
-    <header class="card-grid__header">
-      <p class="section-title">Recommended Movies</p>
-      <p class="section-subtitle">
+  <main class="movie-grid">
+    <header class="movie-grid__header">
+      <h2 class="movie-grid__title">Recommended Movies</h2>
+      <p class="movie-grid__subtitle">
          Action-packed, thrilling, and unforgettable!
       </p>
     </header>
 
-    <section class="card-grid">
-
-      <div class="card card--highlight">
-        <div class="card__rating">⭐ 4.5</div>
-        <img src="https://m.media-amazon.com/images/M/MV5BOGMwZGJiM2EtMzEwZC00YTYzLWIxNzYtMmJmZWNlZjgxZTMwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
-             alt="Super Man" class="card__image" />
-        <h2 class="card__title">Super Man</h2>
-        <p class="card__text">Action/Sci-Fi/Adventure/Fantasy</p>
-        <button class="btn btn--primary">
-          Book Now <span class="btn__icon">→</span>
-        </button>
-      </div>
-
-      <div class="card card--highlight">
-        <div class="card__rating">⭐ 4.5</div>
-        <img src="https://m.media-amazon.com/images/M/MV5BZTYwYjJhNzYtY2ZiZS00ZmYxLWJkZjctYjRlNGIxYjI3ZTU0XkEyXkFqcGc@._V1_.jpg"
-             alt="F1: The Movie" class="card__image" />
-        <h2 class="card__title">F1: The Movie</h2>
-        <p class="card__text">Action/Drama/Sports</p>
-        <button class="btn btn--primary">
-          Book Now <span class="btn__icon">→</span>
-        </button>
-      </div>
-
-      <div class="card card--highlight">
-        <div class="card__rating">⭐ 4.5</div>
-        <img src="https://m.media-amazon.com/images/M/MV5BMDE1N2EzMjAtMDY1My00YWE5LWEyYjYtYmE3YjZjNzQwNDhmXkEyXkFqcGc@._V1_.jpg"
-             alt="Jurassic World Rebirth" class="card__image" />
-        <h2 class="card__title">Jurassic World Rebirth</h2>
-        <p class="card__text">Action/Sci-Fi/Thriller</p>
-        <button class="btn btn--primary">
-          Book Now <span class="btn__icon">→</span>
-        </button>
-      </div>
-
-      <div class="card card--highlight">
-        <div class="card__rating">⭐ 4.5</div>
-        <img src="https://c.saavncdn.com/950/Maalik-Hindi-2025-20250711124204-500x500.jpg"
-             alt="Maalik" class="card__image" />
-        <h2 class="card__title">Maalik</h2>
-        <p class="card__text">Action/Crime/Drama/Period</p>
-        <button class="btn btn--primary">
-          Book Now <span class="btn__icon">→</span>
-        </button>
-      </div>
-
-    </section>
-
+    <section class="movie-grid__cards" id="movieCardsContainer"></section>
   </main>
 
+  <script src="contents.js"></script>
 </body>
 </html>
